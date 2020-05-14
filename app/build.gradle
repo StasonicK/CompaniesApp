@@ -41,7 +41,6 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:' + rootProject.constraintlayoutVersion
     implementation 'com.google.android.material:material:' + rootProject.materialVersion
 
-
     //Retrofit2
     implementation 'com.squareup.retrofit2:retrofit:' + rootProject.retrofitVersion
     implementation 'com.squareup.retrofit2:adapter-rxjava2:' + rootProject.retrofitVersion
@@ -52,12 +51,12 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:' + rootProject.okhttp3Version
     implementation 'com.squareup.okhttp3:okhttp:' + rootProject.okhttp3Version
 
-
     //gson
     implementation 'com.google.code.gson:gson:' + rootProject.gson
 
     //Dagger2
     implementation 'com.google.dagger:dagger-android:' + rootProject.dagger2Version
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     kapt 'com.google.dagger:dagger-compiler:' + rootProject.dagger2Version
 
     //Rx

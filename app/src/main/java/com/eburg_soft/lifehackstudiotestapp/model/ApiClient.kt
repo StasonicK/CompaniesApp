@@ -1,4 +1,4 @@
-package ru.skillbranch.lifehackstudiotestapp.model
+package com.eburg_soft.lifehackstudiotestapp.model
 
 import io.reactivex.Single
 import retrofit2.http.GET

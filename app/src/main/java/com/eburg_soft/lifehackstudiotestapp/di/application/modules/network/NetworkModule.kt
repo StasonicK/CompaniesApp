@@ -1,4 +1,4 @@
-package ru.skillbranch.lifehackstudiotestapp.di.application.modules.network
+package com.eburg_soft.lifehackstudiotestapp.di.application.modules.network
 
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
@@ -9,8 +9,8 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
-import ru.skillbranch.lifehackstudiotestapp.di.application.scope.AppScope
-import ru.skillbranch.lifehackstudiotestapp.model.ApiClient
+import com.eburg_soft.lifehackstudiotestapp.di.application.scope.AppScope
+import com.eburg_soft.lifehackstudiotestapp.model.ApiClient
 import java.util.concurrent.TimeUnit.SECONDS
 
 @Module

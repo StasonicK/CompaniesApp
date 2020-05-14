@@ -1,4 +1,4 @@
-package ru.skillbranch.lifehackstudiotestapp
+package com.eburg_soft.lifehackstudiotestapp
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

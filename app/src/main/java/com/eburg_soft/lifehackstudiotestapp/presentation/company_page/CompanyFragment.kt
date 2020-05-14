@@ -1,4 +1,4 @@
-package ru.skillbranch.lifehackstudiotestapp.presentation.company_page
+package com.eburg_soft.lifehackstudiotestapp.presentation.company_page
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 
-import ru.skillbranch.lifehackstudiotestapp.R
+import com.eburg_soft.lifehackstudiotestapp.R
 
 /**
  * A simple [Fragment] subclass.

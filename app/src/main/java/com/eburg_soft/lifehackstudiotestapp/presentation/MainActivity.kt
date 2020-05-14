@@ -1,8 +1,8 @@
-package ru.skillbranch.lifehackstudiotestapp.presentation
+package com.eburg_soft.lifehackstudiotestapp.presentation
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import ru.skillbranch.lifehackstudiotestapp.R.layout
+import com.eburg_soft.lifehackstudiotestapp.R.layout
 
 class MainActivity : AppCompatActivity() {
 

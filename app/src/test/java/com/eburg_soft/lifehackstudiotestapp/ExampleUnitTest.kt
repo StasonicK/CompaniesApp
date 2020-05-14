@@ -1,4 +1,4 @@
-package ru.skillbranch.lifehackstudiotestapp
+package com.eburg_soft.lifehackstudiotestapp
 
 import org.junit.Test
 

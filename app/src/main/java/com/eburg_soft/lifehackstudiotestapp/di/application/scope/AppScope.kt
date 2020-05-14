@@ -1,4 +1,4 @@
-package ru.skillbranch.lifehackstudiotestapp.di.application.scope
+package com.eburg_soft.lifehackstudiotestapp.di.application.scope
 
 import javax.inject.Scope
 import kotlin.annotation.AnnotationRetention.RUNTIME

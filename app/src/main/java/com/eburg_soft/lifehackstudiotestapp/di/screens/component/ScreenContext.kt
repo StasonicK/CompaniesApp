@@ -1,4 +1,9 @@
 package com.eburg_soft.lifehackstudiotestapp.di.screens.component
 
-class ScreenContext {
+import javax.inject.Qualifier
+import kotlin.annotation.AnnotationRetention.RUNTIME
+
+@Qualifier
+@Retention(RUNTIME)
+annotation class ScreenContext {
 }
