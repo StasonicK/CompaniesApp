@@ -1,11 +1,11 @@
 package com.eburg_soft.lifehackstudiotestapp.presentation.base
 
 import android.content.Context
-import io.reactivex.disposables.CompositeDisposable
-import io.reactivex.disposables.Disposable
 import com.eburg_soft.lifehackstudiotestapp.common.App
 import com.eburg_soft.lifehackstudiotestapp.di.screens.component.ScreenComponent
 import com.eburg_soft.lifehackstudiotestapp.di.screens.modules.ScreenContextModule
+import io.reactivex.disposables.CompositeDisposable
+import io.reactivex.disposables.Disposable
 
 interface BaseContract {
     interface View {
