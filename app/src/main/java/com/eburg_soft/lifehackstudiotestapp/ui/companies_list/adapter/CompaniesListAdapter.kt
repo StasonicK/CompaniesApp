@@ -1,4 +1,4 @@
-package com.eburg_soft.lifehackstudiotestapp.ui.companise_list.adapter
+package com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter
 
 import android.os.Parcelable
 import android.view.LayoutInflater
@@ -7,9 +7,10 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.eburg_soft.lifehackstudiotestapp.R
-import com.eburg_soft.lifehackstudiotestapp.ui.companise_list.adapter.CompaniesListAdapter.CompaniesViewHolder
-import com.eburg_soft.lifehackstudiotestapp.ui.companise_list.adapter.CompaniesListAdapter.Company
+import com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter.CompaniesListAdapter.CompaniesViewHolder
+import com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter.CompaniesListAdapter.Company
 import kotlinx.android.parcel.Parcelize
+import kotlinx.android.synthetic.main.fragment_company.view.tv_id
 
 class CompaniesListAdapter(val listener: OnCompanyItemClickListener? = null) :
     ListAdapter<Company, CompaniesViewHolder>(CompaniesDiffCallback()) {
@@ -28,7 +29,7 @@ class CompaniesListAdapter(val listener: OnCompanyItemClickListener? = null) :
         fun bind(item: Company) {
 
             let {
-                itemView.`@+id/tv_id_text`.text = item.id
+                itemView.tv_id.text = item.id
 
                 id = item.id
                 name = item.name

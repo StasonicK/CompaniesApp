@@ -1,4 +1,4 @@
-package com.eburg_soft.lifehackstudiotestapp.presentation.base
+package com.eburg_soft.lifehackstudiotestapp.ui.base
 
 import android.content.Context
 import com.eburg_soft.lifehackstudiotestapp.common.App

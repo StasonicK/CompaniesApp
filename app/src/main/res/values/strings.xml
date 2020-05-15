@@ -3,4 +3,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name_header">Name:</string>
+    <string name="id_header">Id:</string>
+    <string name="image_header">Image:</string>
+    <string name="name_holder">Name</string>
+    <string name="id_holder">Id</string>
+    <string name="image_holder">Image</string>
 </resources>

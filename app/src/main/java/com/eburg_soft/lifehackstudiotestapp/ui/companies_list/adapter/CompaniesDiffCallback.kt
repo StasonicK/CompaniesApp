@@ -1,7 +1,7 @@
-package com.eburg_soft.lifehackstudiotestapp.ui.companise_list.adapter
+package com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter
 
 import androidx.recyclerview.widget.DiffUtil
-import com.eburg_soft.lifehackstudiotestapp.ui.companise_list.adapter.CompaniesListAdapter.Company
+import com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter.CompaniesListAdapter.Company
 
 class CompaniesDiffCallback : DiffUtil.ItemCallback<Company>() {
     override fun areItemsTheSame(oldItem: Company, newItem: Company): Boolean {

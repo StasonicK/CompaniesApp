@@ -6,6 +6,7 @@ import com.eburg_soft.lifehackstudiotestapp.di.application.component.DaggerAppCo
 import com.eburg_soft.lifehackstudiotestapp.di.application.modules.app.AppContextModule
 
 class App : Application() {
+
     override fun onCreate() {
         super.onCreate()
         component.inject(this)
@@ -16,5 +17,4 @@ class App : Application() {
             .appContextModule(AppContextModule(applicationContext))
             .build()
     }
-
 }

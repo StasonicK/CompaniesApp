@@ -5,5 +5,4 @@ import kotlin.annotation.AnnotationRetention.RUNTIME
 
 @Qualifier
 @Retention(RUNTIME)
-annotation class AppContext {
-}
+annotation class AppContext

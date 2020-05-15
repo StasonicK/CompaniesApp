@@ -5,5 +5,4 @@ import kotlin.annotation.AnnotationRetention.RUNTIME
 
 @Scope
 @Retention(RUNTIME)
-annotation class ScreensScope {
-}
+annotation class ScreensScope

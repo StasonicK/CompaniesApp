@@ -12,5 +12,4 @@ data class CompanyRes(
     var name: String,
     @SerializedName("img")
     var img: String
-) : Parcelable {
-}
+) : Parcelable
