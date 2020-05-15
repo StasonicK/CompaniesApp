@@ -7,7 +7,7 @@ import com.eburg_soft.lifehackstudiotestapp.di.screens.modules.ScreenContextModu
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 
-interface BaseContract {
+class BaseContract {
     interface View {
         fun getScreenComponent(context: Context): ScreenComponent =
             (context.applicationContext as App)

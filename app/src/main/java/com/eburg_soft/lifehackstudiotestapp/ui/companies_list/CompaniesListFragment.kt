@@ -54,7 +54,6 @@ class CompaniesListFragment : Fragment(R.layout.fragment_companies_list), Compan
         getScreenComponent(requireContext()).inject(this)
 
         retainInstance = true
-
         presenter.loadCompaniesList()
     }
 
