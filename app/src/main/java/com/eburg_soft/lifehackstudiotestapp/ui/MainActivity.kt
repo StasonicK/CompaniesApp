@@ -15,7 +15,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(layout.activity_main)
 
         setSupportActionBar(toolbar)
-        if (savedInstanceState == null) {
+        if (supportFragmentManager.findFragmentByTag(CompaniesListFragment.TAG) == null) {
             supportFragmentManager
                 .beginTransaction()
                 .add(
