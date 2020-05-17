@@ -2,6 +2,7 @@ package com.eburg_soft.lifehackstudiotestapp.ui.company_page
 
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.Fragment
 import com.eburg_soft.lifehackstudiotestapp.R
@@ -9,6 +10,7 @@ import com.eburg_soft.lifehackstudiotestapp.common.Constants.BASE_URL
 import com.eburg_soft.lifehackstudiotestapp.model.gateway.data.Company
 import com.eburg_soft.lifehackstudiotestapp.ui.MainActivity
 import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.activity_main.progressbar
 import kotlinx.android.synthetic.main.fragment_company.iv_image
 import kotlinx.android.synthetic.main.fragment_company.tv_id
 import kotlinx.android.synthetic.main.fragment_company.tv_name
@@ -33,10 +35,16 @@ class CompanyFragment() : Fragment(R.layout.fragment_company) {
         company = requireArguments().getParcelable(COMPANY) as Company?
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        requireActivity().progressbar.visibility = View.INVISIBLE
+        bindViews()
+    }
+
     override fun onStart() {
         super.onStart()
         setupToolbar()
-        bindViews()
     }
 
     private fun setupToolbar() {
