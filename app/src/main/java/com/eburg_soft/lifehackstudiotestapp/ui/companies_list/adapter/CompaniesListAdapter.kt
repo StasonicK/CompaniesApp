@@ -27,7 +27,7 @@ class CompaniesListAdapter(val listener: OnCompanyItemClickListener? = null) :
 
         fun bind(item: Company) {
 
-            let {
+            apply {
                 itemView.tv_name_item.text = item.name
 
                 id = item.id

@@ -25,8 +25,8 @@ class CompaniesListFragment : Fragment(R.layout.fragment_companies_list), Compan
 
     private val listAdapter = CompaniesListAdapter(this)
 
-        companion object {
-            const val TAG = "CompaniesListFragment"
+    companion object {
+        const val TAG = "CompaniesListFragment"
 
         @JvmStatic
         fun getNewInstance(): CompaniesListFragment {
@@ -109,7 +109,7 @@ class CompaniesListFragment : Fragment(R.layout.fragment_companies_list), Compan
 
     override fun showErrorMessage(error: String) {
         Snackbar.make(recycler_companies, error, Snackbar.LENGTH_LONG).show()
-        Log.d(TAG, "list submitted")
+        Log.d(TAG, "showErrorMessage")
     }
 
     private fun setHomeButtonInvisible() {
