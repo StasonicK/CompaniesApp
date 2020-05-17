@@ -31,6 +31,10 @@ class CompaniesListPresenter @Inject constructor(
                                 view?.showNetworkErrorMessage()
                                 view?.hideLoading()
                             }
+                            else -> {
+                                view?.showErrorMessage(error.message.toString())
+                                error.printStackTrace()
+                            }
                         }
                     }
                 ))

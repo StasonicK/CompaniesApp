@@ -96,6 +96,10 @@ class CompaniesListFragment : Fragment(R.layout.fragment_companies_list), Compan
         listAdapter.submitList(list)
     }
 
+    override fun showErrorMessage(error: String) {
+        Snackbar.make(recycler_companies, error, Snackbar.LENGTH_LONG).show()
+    }
+
     private fun setHomeButtonInvisible() {
         val actionBar: ActionBar? = (activity as MainActivity).supportActionBar
         actionBar?.setDisplayHomeAsUpEnabled(false)

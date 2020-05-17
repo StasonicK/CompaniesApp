@@ -14,6 +14,7 @@ class DataGatewayImpl @Inject constructor(
 
     override fun loadData(): Single<List<Company>> {
         return apiClient.getCompanies()
-            .map { t -> GatewayMapper.mapCompaniesList(t) }.subscribeOn(scheduler.io())
+            .map { t -> GatewayMapper.mapCompaniesList(t) }
+            .subscribeOn(scheduler.io())
     }
 }

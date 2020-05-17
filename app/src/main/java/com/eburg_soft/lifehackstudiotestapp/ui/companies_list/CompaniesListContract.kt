@@ -11,6 +11,7 @@ interface CompaniesListContract {
         fun hideLoading()
         fun showNetworkErrorMessage()
         fun submitList(list: List<Company>)
+        fun showErrorMessage(error: String)
     }
 
     abstract class Presenter : BaseContract.Presenter<View>() {
