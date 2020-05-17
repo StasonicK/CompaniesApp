@@ -4,10 +4,12 @@ import android.os.Bundle
 import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.Fragment
 import com.eburg_soft.lifehackstudiotestapp.R
+import com.eburg_soft.lifehackstudiotestapp.common.Constants.BASE_URL
 import com.eburg_soft.lifehackstudiotestapp.ui.MainActivity
 import com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter.CompaniesListAdapter.Company
+import com.squareup.picasso.Picasso
+import kotlinx.android.synthetic.main.fragment_company.iv_image
 import kotlinx.android.synthetic.main.fragment_company.tv_id
-import kotlinx.android.synthetic.main.fragment_company.tv_image
 import kotlinx.android.synthetic.main.fragment_company.tv_name
 
 class CompanyFragment() : Fragment(R.layout.fragment_company) {
@@ -41,6 +43,11 @@ class CompanyFragment() : Fragment(R.layout.fragment_company) {
     private fun bindViews() {
         tv_id.text = company?.id ?: ""
         tv_name.text = company?.name ?: ""
-        tv_image.text = company?.image ?: ""
+        Picasso.get().load(BASE_URL + company?.imageUrl)
+            .placeholder(R.drawable.image_placeholder)
+            .centerCrop()
+            .resize(100, 100)
+            .error(R.drawable.image_error)
+            .into(iv_image)
     }
 }

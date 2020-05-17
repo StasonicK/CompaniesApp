@@ -10,11 +10,10 @@ import com.eburg_soft.lifehackstudiotestapp.R
 import com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter.CompaniesListAdapter.CompaniesViewHolder
 import com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter.CompaniesListAdapter.Company
 import kotlinx.android.parcel.Parcelize
-import kotlinx.android.synthetic.main.fragment_company.view.tv_id
+import kotlinx.android.synthetic.main.recycler_view_item.view.tv_name_item
 
 class CompaniesListAdapter(val listener: OnCompanyItemClickListener? = null) :
     ListAdapter<Company, CompaniesViewHolder>(CompaniesDiffCallback()) {
-
 
     interface OnCompanyItemClickListener {
         fun onCompanyClick(company: Company)
@@ -24,16 +23,16 @@ class CompaniesListAdapter(val listener: OnCompanyItemClickListener? = null) :
 
         var id: String = ""
         var name: String = ""
-        var image: String = ""
+        var imageUrl: String = ""
 
         fun bind(item: Company) {
 
             let {
-                itemView.tv_id.text = item.id
+                itemView.tv_name_item.text = item.name
 
                 id = item.id
                 name = item.name
-                image = item.image
+                imageUrl = item.imageUrl
 
                 itemView.setOnClickListener { listener?.onCompanyClick(item) }
             }
@@ -51,6 +50,6 @@ class CompaniesListAdapter(val listener: OnCompanyItemClickListener? = null) :
     }
 
     @Parcelize
-    data class Company(val id: String, val name: String, val image: String) : Parcelable {
+    data class Company(val id: String, val name: String, val imageUrl: String) : Parcelable {
     }
 }

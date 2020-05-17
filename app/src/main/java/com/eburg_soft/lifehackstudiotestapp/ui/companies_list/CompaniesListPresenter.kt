@@ -20,7 +20,6 @@ class CompaniesListPresenter @Inject constructor(
         view?.showLoading()
         subscribe(
             dataGateway.loadData()
-                .subscribeOn(scheduler.io())
                 .observeOn(scheduler.ui())
                 .subscribe({
                     view?.submitList(it)

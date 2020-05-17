@@ -1,5 +1,8 @@
 package com.eburg_soft.lifehackstudiotestapp.di.application.modules.network
 
+import com.eburg_soft.lifehackstudiotestapp.common.Constants.BASE_URL
+import com.eburg_soft.lifehackstudiotestapp.common.Constants.MAX_CONNECT_TIMEOUT
+import com.eburg_soft.lifehackstudiotestapp.common.Constants.MAX_READ_TIMEOUT
 import com.eburg_soft.lifehackstudiotestapp.di.application.scope.AppScope
 import com.eburg_soft.lifehackstudiotestapp.model.ApiClient
 import com.google.gson.Gson
@@ -16,10 +19,6 @@ import java.util.concurrent.TimeUnit.SECONDS
 @Module
 class NetworkModule {
 
-    val BASE_URL = "http://megakohz.bget.ru/"
-
-    val MAX_READ_TIMEOUT: Long = 5
-    val MAX_CONNECT_TIMEOUT: Long = 5
 
     @Provides
     @AppScope

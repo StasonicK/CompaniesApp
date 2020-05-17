@@ -63,6 +63,11 @@ dependencies {
     implementation 'io.reactivex.rxjava2:rxandroid:' + rootProject.rxandroidVersion
     implementation 'io.reactivex.rxjava2:rxjava:' + rootProject.rxjavaVersion
 
+    // Picasso
+    implementation 'com.squareup.picasso:picasso:' + rootProject.picassoVersion
+    implementation 'com.jakewharton.picasso:picasso2-okhttp3-downloader:' +
+            rootProject.picassokhttp3DownloaderVersion
+
     // Tests
     testImplementation 'junit:junit:' + rootProject.jUnitVersion
 
