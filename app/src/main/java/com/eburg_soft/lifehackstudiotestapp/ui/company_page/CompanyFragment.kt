@@ -5,8 +5,8 @@ import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.Fragment
 import com.eburg_soft.lifehackstudiotestapp.R
 import com.eburg_soft.lifehackstudiotestapp.common.Constants.BASE_URL
+import com.eburg_soft.lifehackstudiotestapp.model.gateway.data.Company
 import com.eburg_soft.lifehackstudiotestapp.ui.MainActivity
-import com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter.CompaniesListAdapter.Company
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.fragment_company.iv_image
 import kotlinx.android.synthetic.main.fragment_company.tv_id

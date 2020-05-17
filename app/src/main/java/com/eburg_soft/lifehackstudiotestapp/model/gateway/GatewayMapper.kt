@@ -2,7 +2,7 @@ package com.eburg_soft.lifehackstudiotestapp.model.gateway
 
 import android.util.Log
 import com.eburg_soft.lifehackstudiotestapp.model.CompanyRes
-import com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter.CompaniesListAdapter.Company
+import com.eburg_soft.lifehackstudiotestapp.model.gateway.data.Company
 
 object GatewayMapper {
     fun mapCompany(companyRes: CompanyRes): Company = Company(companyRes.id, companyRes.name, companyRes.img)

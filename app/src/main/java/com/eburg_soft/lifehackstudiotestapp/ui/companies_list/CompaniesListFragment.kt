@@ -8,9 +8,9 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.eburg_soft.lifehackstudiotestapp.R
+import com.eburg_soft.lifehackstudiotestapp.model.gateway.data.Company
 import com.eburg_soft.lifehackstudiotestapp.ui.MainActivity
-import com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter.CompaniesListAdapter
-import com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter.CompaniesListAdapter.Company
+import com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter.CompaniesRecyclerViewAdapter
 import com.eburg_soft.lifehackstudiotestapp.ui.company_page.CompanyFragment
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.progressbar
@@ -18,12 +18,13 @@ import kotlinx.android.synthetic.main.fragment_companies_list.recycler_companies
 import javax.inject.Inject
 
 class CompaniesListFragment : Fragment(R.layout.fragment_companies_list), CompaniesListContract.View,
-    CompaniesListAdapter.OnCompanyItemClickListener {
+    CompaniesRecyclerViewAdapter.OnCompanyItemClickListener {
 
     @Inject
     lateinit var presenter: CompaniesListContract.Presenter
 
-    private val listAdapter = CompaniesListAdapter(this)
+    //    private val listAdapter = CompaniesListAdapter(this)
+    private val listAdapter = CompaniesRecyclerViewAdapter(this)
 
     companion object {
         const val TAG = "CompaniesListFragment"
@@ -103,7 +104,7 @@ class CompaniesListFragment : Fragment(R.layout.fragment_companies_list), Compan
     }
 
     override fun submitList(list: List<Company>) {
-        listAdapter.submitList(list)
+        listAdapter.updateHistoryList(list)
         Log.d(TAG, "list submitted")
     }
 
