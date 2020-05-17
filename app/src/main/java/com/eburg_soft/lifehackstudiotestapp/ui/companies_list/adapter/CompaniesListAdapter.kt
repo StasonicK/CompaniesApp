@@ -1,18 +1,17 @@
 package com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter
 
-import android.os.Parcelable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.eburg_soft.lifehackstudiotestapp.R
+import com.eburg_soft.lifehackstudiotestapp.model.gateway.data.Company
 import com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter.CompaniesListAdapter.CompaniesViewHolder
-import com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter.CompaniesListAdapter.Company
-import kotlinx.android.parcel.Parcelize
 import kotlinx.android.synthetic.main.recycler_view_item.view.tv_name_item
 
-class CompaniesListAdapter(val listener: OnCompanyItemClickListener? = null) :
+class CompaniesListAdapter
+    (val listener: OnCompanyItemClickListener? = null) :
     ListAdapter<Company, CompaniesViewHolder>(CompaniesDiffCallback()) {
 
     interface OnCompanyItemClickListener {
@@ -26,16 +25,18 @@ class CompaniesListAdapter(val listener: OnCompanyItemClickListener? = null) :
         var imageUrl: String = ""
 
         fun bind(item: Company) {
+//            val comp = Company()
+            itemView.tv_name_item.text = item.name
 
-            apply {
-                itemView.tv_name_item.text = item.name
+//            comp.id = item.id
+//            comp.name = item.name
+//            comp.imageUrl = item.imageUrl
 
-                id = item.id
-                name = item.name
-                imageUrl = item.imageUrl
+            id = item.id
+            name = item.name
+            imageUrl = item.imageUrl
 
-                itemView.setOnClickListener { listener?.onCompanyClick(item) }
-            }
+            itemView.setOnClickListener { listener?.onCompanyClick(item) }
         }
     }
 
@@ -47,9 +48,5 @@ class CompaniesListAdapter(val listener: OnCompanyItemClickListener? = null) :
 
     override fun onBindViewHolder(holder: CompaniesViewHolder, position: Int) {
         holder.bind(getItem(position))
-    }
-
-    @Parcelize
-    data class Company(val id: String, val name: String, val imageUrl: String) : Parcelable {
     }
 }

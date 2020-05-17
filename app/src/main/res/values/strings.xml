@@ -1,12 +1,10 @@
 <resources>
     <string name="app_name">Lifehack Studio Test App</string>
 
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="name_header">Name:</string>
-    <string name="id_header">Id:</string>
-    <string name="image_header">Image:</string>
-    <string name="name_holder">Name</string>
-    <string name="id_holder">Id</string>
-    <string name="image_holder">Image</string>
+    <string name="company_name_header">Company name:</string>
+    <string name="company_id_header">Company id:</string>
+    <string name="company_image_header">Company image:</string>
+    <string name="company_name_holder">Name</string>
+    <string name="company_id_holder">Id</string>
+    <string name="company_image_holder">Image</string>
 </resources>

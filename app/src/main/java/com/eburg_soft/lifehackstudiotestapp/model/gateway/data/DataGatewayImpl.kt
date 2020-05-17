@@ -2,7 +2,6 @@ package com.eburg_soft.lifehackstudiotestapp.model.gateway.data
 
 import com.eburg_soft.lifehackstudiotestapp.model.ApiClient
 import com.eburg_soft.lifehackstudiotestapp.model.gateway.GatewayMapper
-import com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter.CompaniesListAdapter.Company
 import com.eburg_soft.lifehackstudiotestapp.utils.MyRxUtils
 import io.reactivex.Single
 import javax.inject.Inject
