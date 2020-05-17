@@ -104,7 +104,7 @@ class CompaniesListFragment : Fragment(R.layout.fragment_companies_list), Compan
     }
 
     override fun submitList(list: List<Company>) {
-        listAdapter.updateHistoryList(list)
+        listAdapter.updateCompanyList(list)
         Log.d(TAG, "list submitted")
     }
 

@@ -30,7 +30,7 @@ class CompaniesRecyclerViewAdapter(private val listener: OnCompanyItemClickListe
         holder.bind(company = item, listener = this.listener!!)
     }
 
-    fun updateHistoryList(newHistory: List<Company>) {
+    fun updateCompanyList(newHistory: List<Company>) {
         companyList.clear()
         companyList.addAll(newHistory)
         notifyDataSetChanged()
