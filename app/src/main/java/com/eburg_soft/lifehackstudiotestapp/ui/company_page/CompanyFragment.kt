@@ -1,6 +1,7 @@
 package com.eburg_soft.lifehackstudiotestapp.ui.company_page
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.Fragment
 import com.eburg_soft.lifehackstudiotestapp.R
@@ -27,6 +28,11 @@ class CompanyFragment() : Fragment(R.layout.fragment_company) {
         }
     }
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        company = requireArguments().getParcelable(COMPANY) as Company?
+    }
+
     override fun onStart() {
         super.onStart()
         setupToolbar()
@@ -49,5 +55,7 @@ class CompanyFragment() : Fragment(R.layout.fragment_company) {
             .resize(100, 100)
             .error(R.drawable.image_error)
             .into(iv_image)
+
+        Log.d(TAG, "bindViews: id ${company?.id}, name ${company?.name}, url ${company?.imageUrl}")
     }
 }
