@@ -1,6 +1,7 @@
 package com.eburg_soft.lifehackstudiotestapp.ui.companies_list
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.Fragment
@@ -24,8 +25,8 @@ class CompaniesListFragment : Fragment(R.layout.fragment_companies_list), Compan
 
     private val listAdapter = CompaniesListAdapter(this)
 
-    companion object {
-        const val TAG = "CompaniesListFragment"
+        companion object {
+            const val TAG = "CompaniesListFragment"
 
         @JvmStatic
         fun getNewInstance(): CompaniesListFragment {
@@ -45,6 +46,7 @@ class CompaniesListFragment : Fragment(R.layout.fragment_companies_list), Compan
             DividerItemDecoration(requireContext(), DividerItemDecoration.VERTICAL)
         )
         setHomeButtonInvisible()
+        Log.d(TAG, "onViewCreated")
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -52,17 +54,20 @@ class CompaniesListFragment : Fragment(R.layout.fragment_companies_list), Compan
         getScreenComponent(requireContext()).inject(this)
 
         retainInstance = true
-        presenter.loadCompaniesList()
+        Log.d(TAG, "onCreate")
     }
 
     override fun onStart() {
         super.onStart()
         presenter.attach(this)
+        presenter.loadCompaniesList()
+        Log.d(TAG, "onStart")
     }
 
     override fun onStop() {
         super.onStop()
         presenter.detach()
+        Log.d(TAG, "onStop")
     }
 
     override fun openCompanyView(company: Company) {
@@ -74,30 +79,37 @@ class CompaniesListFragment : Fragment(R.layout.fragment_companies_list), Compan
                     .commit()
             }
         }
+        Log.d(TAG, "openCompanyView")
     }
 
     override fun showLoading() {
         requireActivity().progressbar.visibility = View.VISIBLE
+        Log.d(TAG, "showLoading")
     }
 
     override fun hideLoading() {
         requireActivity().progressbar.visibility = View.INVISIBLE
+        Log.d(TAG, "hideLoading")
     }
 
     override fun showNetworkErrorMessage() {
         Snackbar.make(recycler_companies, "Нет подключения к сети", Snackbar.LENGTH_LONG).show()
+        Log.d(TAG, "showNetworkErrorMessage")
     }
 
     override fun onCompanyClick(company: Company) {
         presenter.onCompanyClick(company)
+        Log.d(TAG, "clicked on company id: $company.id")
     }
 
     override fun submitList(list: List<Company>) {
         listAdapter.submitList(list)
+        Log.d(TAG, "list submitted")
     }
 
     override fun showErrorMessage(error: String) {
         Snackbar.make(recycler_companies, error, Snackbar.LENGTH_LONG).show()
+        Log.d(TAG, "list submitted")
     }
 
     private fun setHomeButtonInvisible() {

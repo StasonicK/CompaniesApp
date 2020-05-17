@@ -5,10 +5,6 @@ import retrofit2.http.GET
 
 interface ApiClient {
 
-
     @GET("/test_task/test.php")
     fun getCompanies(): Single<List<CompanyRes>>
-
-//    @GET("/http://megakohz.bget.ru/test_task/test.php?")
-//    fun getCompanyById(@Query("id") id: String): Single<List<CompanyRes>>
 }
