@@ -1,8 +1,5 @@
 package com.eburg_soft.companiesapp.di.application.modules.network
 
-import com.eburg_soft.companiesapp.common.Constants.BASE_URL
-import com.eburg_soft.companiesapp.common.Constants.MAX_CONNECT_TIMEOUT
-import com.eburg_soft.companiesapp.common.Constants.MAX_READ_TIMEOUT
 import com.eburg_soft.companiesapp.di.application.scope.AppScope
 import com.eburg_soft.companiesapp.model.ApiClient
 import com.google.gson.Gson
@@ -19,6 +16,9 @@ import java.util.concurrent.TimeUnit.SECONDS
 @Module
 class NetworkModule {
 
+    private val BASE_URL = "http://megakohz.bget.ru"
+    private val MAX_READ_TIMEOUT: Long = 5
+    private val MAX_CONNECT_TIMEOUT: Long = 5
 
     @Provides
     @AppScope
