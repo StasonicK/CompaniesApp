@@ -1,4 +1,4 @@
-package com.eburg_soft.lifehackstudiotestapp.model
+package com.eburg_soft.companiesapp.model
 
 import io.reactivex.Single
 import retrofit2.http.GET

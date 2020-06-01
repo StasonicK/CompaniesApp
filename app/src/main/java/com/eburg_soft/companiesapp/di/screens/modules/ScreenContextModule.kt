@@ -1,8 +1,8 @@
-package com.eburg_soft.lifehackstudiotestapp.di.screens.modules
+package com.eburg_soft.companiesapp.di.screens.modules
 
 import android.content.Context
-import com.eburg_soft.lifehackstudiotestapp.di.screens.component.ScreenContext
-import com.eburg_soft.lifehackstudiotestapp.di.screens.scope.ScreensScope
+import com.eburg_soft.companiesapp.di.screens.component.ScreenContext
+import com.eburg_soft.companiesapp.di.screens.scope.ScreensScope
 import dagger.Module
 import dagger.Provides
 

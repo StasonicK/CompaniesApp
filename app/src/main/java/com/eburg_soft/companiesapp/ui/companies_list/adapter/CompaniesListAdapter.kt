@@ -1,13 +1,13 @@
-package com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter
+package com.eburg_soft.companiesapp.ui.companies_list.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import com.eburg_soft.lifehackstudiotestapp.R
-import com.eburg_soft.lifehackstudiotestapp.model.gateway.data.Company
-import com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter.CompaniesListAdapter.CompaniesViewHolder
+import com.eburg_soft.companiesapp.R
+import com.eburg_soft.companiesapp.model.gateway.data.Company
+import com.eburg_soft.companiesapp.ui.companies_list.adapter.CompaniesListAdapter.CompaniesViewHolder
 import kotlinx.android.synthetic.main.recycler_view_item.view.tv_name_item
 
 class CompaniesListAdapter

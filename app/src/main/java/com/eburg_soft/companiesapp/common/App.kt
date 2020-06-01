@@ -1,9 +1,9 @@
-package com.eburg_soft.lifehackstudiotestapp.common
+package com.eburg_soft.companiesapp.common
 
 import android.app.Application
-import com.eburg_soft.lifehackstudiotestapp.di.application.component.AppComponent
-import com.eburg_soft.lifehackstudiotestapp.di.application.component.DaggerAppComponent
-import com.eburg_soft.lifehackstudiotestapp.di.application.modules.app.AppContextModule
+import com.eburg_soft.companiesapp.di.application.component.AppComponent
+import com.eburg_soft.companiesapp.di.application.component.DaggerAppComponent
+import com.eburg_soft.companiesapp.di.application.modules.app.AppContextModule
 
 class App : Application() {
 

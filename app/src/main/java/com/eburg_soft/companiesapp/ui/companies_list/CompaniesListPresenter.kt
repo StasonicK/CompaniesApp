@@ -1,10 +1,10 @@
-package com.eburg_soft.lifehackstudiotestapp.ui.companies_list
+package com.eburg_soft.companiesapp.ui.companies_list
 
 import android.accounts.NetworkErrorException
 import android.util.Log
-import com.eburg_soft.lifehackstudiotestapp.model.gateway.data.Company
-import com.eburg_soft.lifehackstudiotestapp.model.gateway.data.DataGateway
-import com.eburg_soft.lifehackstudiotestapp.utils.MyRxUtils
+import com.eburg_soft.companiesapp.model.gateway.data.Company
+import com.eburg_soft.companiesapp.model.gateway.data.DataGateway
+import com.eburg_soft.companiesapp.utils.MyRxUtils
 import java.net.UnknownHostException
 import javax.inject.Inject
 

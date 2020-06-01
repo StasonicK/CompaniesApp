@@ -1,14 +1,14 @@
-package com.eburg_soft.lifehackstudiotestapp.ui.company_page
+package com.eburg_soft.companiesapp.ui.company_page
 
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.Fragment
-import com.eburg_soft.lifehackstudiotestapp.R
-import com.eburg_soft.lifehackstudiotestapp.common.Constants.BASE_URL
-import com.eburg_soft.lifehackstudiotestapp.model.gateway.data.Company
-import com.eburg_soft.lifehackstudiotestapp.ui.MainActivity
+import com.eburg_soft.companiesapp.R
+import com.eburg_soft.companiesapp.common.Constants.BASE_URL
+import com.eburg_soft.companiesapp.model.gateway.data.Company
+import com.eburg_soft.companiesapp.ui.MainActivity
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_main.progressbar
 import kotlinx.android.synthetic.main.fragment_company.iv_image

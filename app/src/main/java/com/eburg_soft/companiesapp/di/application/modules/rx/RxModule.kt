@@ -1,7 +1,7 @@
-package com.eburg_soft.lifehackstudiotestapp.di.application.modules.rx
+package com.eburg_soft.companiesapp.di.application.modules.rx
 
-import com.eburg_soft.lifehackstudiotestapp.di.application.scope.AppScope
-import com.eburg_soft.lifehackstudiotestapp.utils.MyRxUtils
+import com.eburg_soft.companiesapp.di.application.scope.AppScope
+import com.eburg_soft.companiesapp.utils.MyRxUtils
 import dagger.Module
 import dagger.Provides
 

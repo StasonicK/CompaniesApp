@@ -1,4 +1,4 @@
-package com.eburg_soft.lifehackstudiotestapp
+package com.eburg_soft.companiesapp
 
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.platform.app.InstrumentationRegistry

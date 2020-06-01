@@ -1,4 +1,4 @@
-package com.eburg_soft.lifehackstudiotestapp.model
+package com.eburg_soft.companiesapp.model
 
 import android.os.Parcelable
 import com.google.gson.annotations.SerializedName

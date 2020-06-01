@@ -1,4 +1,4 @@
-package com.eburg_soft.lifehackstudiotestapp.common
+package com.eburg_soft.companiesapp.common
 
 object Constants {
     const val BASE_URL = "http://megakohz.bget.ru"

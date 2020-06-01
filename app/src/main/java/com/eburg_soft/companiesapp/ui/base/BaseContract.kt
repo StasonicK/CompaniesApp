@@ -1,9 +1,9 @@
-package com.eburg_soft.lifehackstudiotestapp.ui.base
+package com.eburg_soft.companiesapp.ui.base
 
 import android.content.Context
-import com.eburg_soft.lifehackstudiotestapp.common.App
-import com.eburg_soft.lifehackstudiotestapp.di.screens.component.ScreenComponent
-import com.eburg_soft.lifehackstudiotestapp.di.screens.modules.ScreenContextModule
+import com.eburg_soft.companiesapp.common.App
+import com.eburg_soft.companiesapp.di.screens.component.ScreenComponent
+import com.eburg_soft.companiesapp.di.screens.modules.ScreenContextModule
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.disposables.Disposable
 

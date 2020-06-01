@@ -1,8 +1,8 @@
-package com.eburg_soft.lifehackstudiotestapp.di.screens.modules
+package com.eburg_soft.companiesapp.di.screens.modules
 
-import com.eburg_soft.lifehackstudiotestapp.di.screens.scope.ScreensScope
-import com.eburg_soft.lifehackstudiotestapp.ui.companies_list.CompaniesListContract
-import com.eburg_soft.lifehackstudiotestapp.ui.companies_list.CompaniesListPresenter
+import com.eburg_soft.companiesapp.di.screens.scope.ScreensScope
+import com.eburg_soft.companiesapp.ui.companies_list.CompaniesListContract
+import com.eburg_soft.companiesapp.ui.companies_list.CompaniesListPresenter
 import dagger.Binds
 import dagger.Module
 

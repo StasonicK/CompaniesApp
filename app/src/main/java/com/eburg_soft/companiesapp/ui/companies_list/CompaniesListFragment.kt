@@ -1,4 +1,4 @@
-package com.eburg_soft.lifehackstudiotestapp.ui.companies_list
+package com.eburg_soft.companiesapp.ui.companies_list
 
 import android.os.Bundle
 import android.util.Log
@@ -7,11 +7,11 @@ import androidx.appcompat.app.ActionBar
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.eburg_soft.lifehackstudiotestapp.R
-import com.eburg_soft.lifehackstudiotestapp.model.gateway.data.Company
-import com.eburg_soft.lifehackstudiotestapp.ui.MainActivity
-import com.eburg_soft.lifehackstudiotestapp.ui.companies_list.adapter.CompaniesListAdapter
-import com.eburg_soft.lifehackstudiotestapp.ui.company_page.CompanyFragment
+import com.eburg_soft.companiesapp.R
+import com.eburg_soft.companiesapp.model.gateway.data.Company
+import com.eburg_soft.companiesapp.ui.MainActivity
+import com.eburg_soft.companiesapp.ui.companies_list.adapter.CompaniesListAdapter
+import com.eburg_soft.companiesapp.ui.company_page.CompanyFragment
 import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.progressbar
 import kotlinx.android.synthetic.main.fragment_companies_list.recycler_companies

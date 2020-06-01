@@ -1,8 +1,8 @@
-package com.eburg_soft.lifehackstudiotestapp.di.application.modules.gateway
+package com.eburg_soft.companiesapp.di.application.modules.gateway
 
-import com.eburg_soft.lifehackstudiotestapp.di.application.scope.AppScope
-import com.eburg_soft.lifehackstudiotestapp.model.gateway.data.DataGateway
-import com.eburg_soft.lifehackstudiotestapp.model.gateway.data.DataGatewayImpl
+import com.eburg_soft.companiesapp.di.application.scope.AppScope
+import com.eburg_soft.companiesapp.model.gateway.data.DataGateway
+import com.eburg_soft.companiesapp.model.gateway.data.DataGatewayImpl
 import dagger.Binds
 import dagger.Module
 

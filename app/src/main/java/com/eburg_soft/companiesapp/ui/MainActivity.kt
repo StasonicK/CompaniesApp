@@ -1,11 +1,11 @@
-package com.eburg_soft.lifehackstudiotestapp.ui
+package com.eburg_soft.companiesapp.ui
 
 import android.os.Bundle
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
-import com.eburg_soft.lifehackstudiotestapp.R
-import com.eburg_soft.lifehackstudiotestapp.R.layout
-import com.eburg_soft.lifehackstudiotestapp.ui.companies_list.CompaniesListFragment
+import com.eburg_soft.companiesapp.R
+import com.eburg_soft.companiesapp.R.layout
+import com.eburg_soft.companiesapp.ui.companies_list.CompaniesListFragment
 import kotlinx.android.synthetic.main.toolbar.toolbar
 
 class MainActivity : AppCompatActivity() {

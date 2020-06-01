@@ -1,4 +1,4 @@
-package com.eburg_soft.lifehackstudiotestapp.utils
+package com.eburg_soft.companiesapp.utils
 
 import io.reactivex.Scheduler
 import io.reactivex.android.schedulers.AndroidSchedulers

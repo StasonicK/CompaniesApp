@@ -1,4 +1,4 @@
-package com.eburg_soft.lifehackstudiotestapp.model.gateway.data
+package com.eburg_soft.companiesapp.model.gateway.data
 
 import io.reactivex.Single
 

@@ -1,10 +1,10 @@
-package com.eburg_soft.lifehackstudiotestapp.di.application.modules.network
+package com.eburg_soft.companiesapp.di.application.modules.network
 
-import com.eburg_soft.lifehackstudiotestapp.common.Constants.BASE_URL
-import com.eburg_soft.lifehackstudiotestapp.common.Constants.MAX_CONNECT_TIMEOUT
-import com.eburg_soft.lifehackstudiotestapp.common.Constants.MAX_READ_TIMEOUT
-import com.eburg_soft.lifehackstudiotestapp.di.application.scope.AppScope
-import com.eburg_soft.lifehackstudiotestapp.model.ApiClient
+import com.eburg_soft.companiesapp.common.Constants.BASE_URL
+import com.eburg_soft.companiesapp.common.Constants.MAX_CONNECT_TIMEOUT
+import com.eburg_soft.companiesapp.common.Constants.MAX_READ_TIMEOUT
+import com.eburg_soft.companiesapp.di.application.scope.AppScope
+import com.eburg_soft.companiesapp.model.ApiClient
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module

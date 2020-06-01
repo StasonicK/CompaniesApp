@@ -1,4 +1,4 @@
-package com.eburg_soft.lifehackstudiotestapp
+package com.eburg_soft.companiesapp
 
 import org.junit.*
 import org.junit.Assert.*
