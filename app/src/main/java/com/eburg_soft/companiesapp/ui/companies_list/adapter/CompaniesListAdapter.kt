@@ -20,21 +20,8 @@ class CompaniesListAdapter
 
     inner class CompaniesViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        var id: String = ""
-        var name: String = ""
-        var imageUrl: String = ""
-
         fun bind(item: Company) {
-//            val comp = Company()
             itemView.tv_name_item.text = item.name
-
-//            comp.id = item.id
-//            comp.name = item.name
-//            comp.imageUrl = item.imageUrl
-
-            id = item.id
-            name = item.name
-            imageUrl = item.imageUrl
 
             itemView.setOnClickListener { listener?.onCompanyClick(item) }
         }
