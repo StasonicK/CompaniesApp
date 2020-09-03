@@ -6,10 +6,7 @@ import kotlinx.android.parcel.Parcelize
 
 @Parcelize
 data class CompanyRes(
-    @SerializedName("id")
     var id: String,
-    @SerializedName("name")
     var name: String,
-    @SerializedName("img")
     var img: String
 ) : Parcelable
