@@ -1,7 +1,7 @@
 # CompaniesApp
-List of language, frameworks and libreries:
-- Kotlin;
-- MVP;
+Language - Kotlin.
+Architecture pattern - MVP.
+Libreries:
 - Dagger 2;
 - RxJava 2;
 - Retrofit
